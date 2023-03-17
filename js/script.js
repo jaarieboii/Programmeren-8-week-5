@@ -85,6 +85,6 @@ function logData(detections) {
 // START - load the FACE API models - after loading init the app
 //
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri("../face-api/models"),
-    faceapi.nets.faceLandmark68Net.loadFromUri("../face-api/models")
+    faceapi.nets.tinyFaceDetector.loadFromUri("/models"),
+    faceapi.nets.faceLandmark68Net.loadFromUri("/models")
 ]).then(initApplication)
